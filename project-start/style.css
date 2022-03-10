@@ -21,6 +21,12 @@ body {
 }
 
 /* styling Nav */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .main-nav {
     display: flex;
     list-style: none;
@@ -57,6 +63,10 @@ a {
     height: 50vh;
 }
 
+.banner-img {
+    width: 20rem;
+}
+
 /* Project Grid */
 .grid-wrapper {
     display: grid;
@@ -71,9 +81,16 @@ a {
 .box {
     background-color: #444;
     padding: 130px;
-    margin: 20px;
+    margin: 10px;
 }
 
+/* rotate the boxes when hovered on by -7degs */
+.box:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
 /* footer */
 .footer-container {
     display: flex;
